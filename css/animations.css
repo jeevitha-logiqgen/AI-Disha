@@ -1,0 +1,135 @@
+/* ==========================================================================
+   AI DISHA — Animations & Micro-Interactions
+   ========================================================================== */
+
+/* Fade In & Out */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInSimple {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Pulsing Status Dot */
+@keyframes pulse-dot {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(223, 223, 223, 0.6);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 8px rgba(223, 223, 223, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(223, 223, 223, 0);
+  }
+}
+
+/* Floating Elements */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.float-animation {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+/* Blinking Cursor */
+@keyframes blinkCursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink {
+  display: inline-block;
+  width: 7px;
+  height: 15px;
+  background-color: var(--color-100);
+  margin-left: 4px;
+  vertical-align: middle;
+  animation: blinkCursor 0.9s infinite;
+}
+
+/* Metallic Shimmer */
+@keyframes metallicShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #dfdfdf 0%, #ffffff 50%, #dfdfdf 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: metallicShimmer 6s infinite linear;
+}
+
+/* Glow Border Radar */
+@keyframes glowPulse {
+  0%, 100% {
+    border-color: rgba(223, 223, 223, 0.15);
+    box-shadow: 0 0 15px rgba(223, 223, 223, 0.05);
+  }
+  50% {
+    border-color: rgba(223, 223, 223, 0.4);
+    box-shadow: 0 0 30px rgba(223, 223, 223, 0.15);
+  }
+}
+
+.glow-border-pulse {
+  animation: glowPulse 4s infinite ease-in-out;
+}
+
+/* Terminal Scanline */
+.scanline-effect {
+  position: relative;
+}
+
+.scanline-effect::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 5;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* Scroll Reveal Utility Classes */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s var(--ease-smooth), transform 0.7s var(--ease-smooth);
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger Delays */
+.delay-1 { transition-delay: 100ms; }
+.delay-2 { transition-delay: 200ms; }
+.delay-3 { transition-delay: 300ms; }
+.delay-4 { transition-delay: 400ms; }

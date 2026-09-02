@@ -1,0 +1,156 @@
+/* ==========================================================================
+   AI DISHA — Global Design Tokens & Theme Variables
+   Color Palette: #101010, #dfdfdf, #b3b3b3, #878787, #5b5b5b
+   Aesthetic: Apple Minimal + Futuristic AI Technology + High-End Terminal
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Brand Core Monochromatic Metallic Palette */
+  --bg-primary: #101010;
+  --bg-secondary: #151515;
+  --bg-surface: #1a1a1a;
+  --bg-card: rgba(26, 26, 26, 0.75);
+  --bg-card-hover: rgba(36, 36, 36, 0.9);
+  --bg-glass: rgba(223, 223, 223, 0.03);
+  --bg-glass-strong: rgba(223, 223, 223, 0.07);
+  --bg-glass-modal: rgba(16, 16, 16, 0.92);
+
+  /* Monochromatic Color Scale */
+  --color-100: #dfdfdf; /* Primary High Contrast Text & Glow */
+  --color-200: #b3b3b3; /* Secondary Body Text & Silver Accent */
+  --color-300: #878787; /* Muted Text, Steel Accents */
+  --color-400: #5b5b5b; /* Borders, Dim Dividers */
+  --color-900: #101010; /* Deep Obsidian Base */
+
+  /* Semantic Aliases */
+  --text-primary: #dfdfdf;
+  --text-secondary: #b3b3b3;
+  --text-muted: #878787;
+  --text-dim: #5b5b5b;
+  --text-pure-white: #ffffff;
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(223, 223, 223, 0.08);
+  --border-medium: rgba(223, 223, 223, 0.16);
+  --border-strong: rgba(223, 223, 223, 0.28);
+  --border-focus: #dfdfdf;
+  --border-glow: rgba(223, 223, 223, 0.4);
+
+  /* Glows & Gradients */
+  --glow-subtle: 0 0 25px rgba(223, 223, 223, 0.08);
+  --glow-strong: 0 0 45px rgba(223, 223, 223, 0.22);
+  --glow-button: 0 0 30px rgba(223, 223, 223, 0.35);
+  
+  --gradient-silver: linear-gradient(135deg, #ffffff 0%, #dfdfdf 40%, #b3b3b3 70%, #878787 100%);
+  --gradient-titanium: linear-gradient(180deg, rgba(223, 223, 223, 0.12) 0%, rgba(223, 223, 223, 0.02) 100%);
+  --gradient-card: linear-gradient(145deg, rgba(32, 32, 32, 0.8) 0%, rgba(18, 18, 18, 0.9) 100%);
+  --gradient-dark-radial: radial-gradient(circle at 50% 0%, rgba(223, 223, 223, 0.08) 0%, transparent 70%);
+  --gradient-metallic-border: linear-gradient(135deg, rgba(223, 223, 223, 0.3) 0%, rgba(91, 91, 91, 0.2) 50%, rgba(223, 223, 223, 0.1) 100%);
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Sizing & Spacing */
+  --container-max-width: 1280px;
+  --container-padding: clamp(1.25rem, 5vw, 3rem);
+  --section-spacing: clamp(5rem, 9vw, 8rem);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  /* Transitions & Shadows */
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 350ms;
+  --duration-slow: 600ms;
+
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.8);
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --blur-glass: blur(16px);
+  --blur-glass-nav: blur(24px);
+}
+
+/* Base Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  position: relative;
+  background-image: 
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(223, 223, 223, 0.09), transparent 70%),
+    radial-gradient(circle at 100% 40%, rgba(91, 91, 91, 0.05), transparent 50%),
+    radial-gradient(circle at 0% 80%, rgba(135, 135, 135, 0.04), transparent 50%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-400);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-300);
+}
+
+/* Selection */
+::selection {
+  background: rgba(223, 223, 223, 0.25);
+  color: #ffffff;
+}
+
+/* Utility Text Styles */
+.text-gradient {
+  background: var(--gradient-silver);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}

@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI DISHA — 45-Day AI Practitioner to AI Agent Builder Masterclass</title>
+  <meta name="description" content="AI DISHA is an elite, futuristic AI education platform engineered to transform practitioners into autonomous AI agent architects across Python, LLMs, LangGraph, Cybersecurity, Robotics, and Enterprise Capstones.">
+  <meta name="keywords" content="AI DISHA, AI Agents, Autonomous Agents, LangGraph, Python for AI, Generative AI, Robotics AI, AI Bootcamp, LLM Engineering, AI Career">
+  
+  <!-- Favicon / Brand Symbol -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%3E<rect width=%22100%25%22 height=%22100%25%22 fill=%22%23101010%22/><text y=%2270%25%22 font-size=%2270%22 font-family=%22sans-serif%22 font-weight=%22bold%22 fill=%22%23dfdfdf%22>AD</text></svg>">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/design-tokens.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Header / Navigation Bar
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="AI DISHA Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+        </div>
+        <span class="brand-text">AI DISHA</span>
+        <span class="brand-badge">AGENT LABS</span>
+      </a>
+
+      <!-- Desktop Navigation Menu (9 Links as requested) -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#program" class="nav-link">Program</a></li>
+          <li><a href="#curriculum" class="nav-link">Curriculum</a></li>
+          <li><a href="#agents" class="nav-link">AI Agents</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#hackathons" class="nav-link">Hackathons</a></li>
+          <li><a href="#career" class="nav-link">Career</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="nav-actions">
+        <button class="nav-cta-btn open-apply-modal-btn" aria-label="Join AI DISHA Cohort">
+          <span>Join AI DISHA</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+        <button class="mobile-toggle" aria-label="Toggle navigation drawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div>
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2.5rem;">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <div class="brand-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <span class="brand-text">AI DISHA</span>
+        </div>
+        <button class="mobile-drawer-close" style="background: transparent; border: none; color: var(--text-secondary); cursor: pointer;" aria-label="Close drawer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <ul style="list-style: none; display: flex; flex-direction: column; gap: 1.25rem;">
+        <li><a href="#home" class="mobile-nav-link" style="color: var(--text-primary); text-decoration: none; font-size: 1.15rem; font-weight: 600;">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link" style="color: var(--text-secondary); text-decoration: none; font-size: 1.15rem; font-weight: 600;">About</a></li>
+        <li><a href="#program" class="mobile-nav-link" style="color: var(--text-secondary); text-decoration: none; font-size: 1.15rem; font-weight: 600;">Program</a></li>
+        <li><a href="#curriculum" class="mobile-nav-link" style="color: var(--text-secondary); text-decoration: none; font-size: 1.15rem; font-weight: 600;">Curriculum</a></li>
+        <li><a href="#agents" class="mobile-nav-link" style="color: var(--text-secondary); text-decoration: none; font-size: 1.15rem; font-weight: 600;">AI Agents</a></li>
+        <li><a href="#projects" class="mobile-nav-link" style="color: var(--text-secondary); text-decoration: none; font-size: 1.15rem; font-weight: 600;">Projects</a></li>
+        <li><a href="#hackathons" class="mobile-nav-link" style="color: var(--text-secondary); text-decoration: none; font-size: 1.15rem; font-weight: 600;">Hackathons</a></li>
+        <li><a href="#career" class="mobile-nav-link" style="color: var(--text-secondary); text-decoration: none; font-size: 1.15rem; font-weight: 600;">Career</a></li>
+        <li><a href="#contact" class="mobile-nav-link" style="color: var(--text-secondary); text-decoration: none; font-size: 1.15rem; font-weight: 600;">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <button class="btn btn-primary open-apply-modal-btn" style="width: 100%; margin-bottom: 1rem;">
+        <span>Join AI DISHA</span>
+      </button>
+      <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); text-align: center;">
+        ● NEXT COHORT COMMENCING SOON
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <canvas id="neural-canvas" class="hero-bg-canvas"></canvas>
+
+    <div class="container">
+      <div class="hero-content reveal-on-scroll">
+        <!-- Live Enrollment Badge -->
+        <div class="hero-pill-badge">
+          <span class="pulse-orb"></span>
+          <span>✦ 2026 COHORT ENROLLMENT OPEN · 45-DAY INTENSIVE</span>
+        </div>
+
+        <!-- Main Title -->
+        <h1 class="hero-title">
+          From AI Practitioner to <br>
+          <span class="title-accent">Autonomous Agent Architect.</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero-subtitle">
+          Master the frontier of Artificial Intelligence in an immersive, high-stakes 45-day program. Engineer production-grade Python pipelines, Neural Architectures, LangGraph Agent Swarms, Enterprise Cybersecurity, and Embodied Robotics.
+        </p>
+
+        <!-- CTAs (Include strong CTAs as requested) -->
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg open-apply-modal-btn" id="hero-join-cta">
+            <span>Start Your AI Journey</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+          
+          <a href="#program" class="btn btn-secondary btn-lg" id="hero-explore-cta">
+            <span>Explore 45-Day Blueprint</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+
+          <a href="#agents" class="btn btn-outline btn-lg" id="hero-sandbox-cta">
+            <span>Launch Live Agent Sandbox</span>
+          </a>
+        </div>
+
+        <!-- Live Cohort Metrics Ribbon -->
+        <div class="hero-stats-ribbon">
+          <div class="stat-item">
+            <span class="stat-number">45</span>
+            <span class="stat-label">DAYS INTENSIVE CURRICULUM</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">AUTONOMOUS PRODUCTION AGENTS</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">2</span>
+            <span class="stat-label">CAPSTONE 48-HR HACKATHONS</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">INDUSTRY INTERNSHIP MATCHING</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ==========================================================================
+       About Section
+       ========================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-tag">
+          <span class="tag-dot"></span>
+          <span>01 // THE AI PARADIGM SHIFT</span>
+        </div>
+        <h2 class="section-title">Built for the Frontier of Agentic Intelligence</h2>
+        <p class="section-description">
+          The software industry is transitioning from passive chatbots to goal-directed autonomous agents that reason, invoke tools, write code, and execute multi-step workflows with zero human intervention.
+        </p>
+      </div>
+
+      <!-- 4 Core Pillars -->
+      <div class="grid-4 reveal-on-scroll delay-1" style="margin-bottom: 3.5rem;">
+        <div class="glass-card">
+          <div class="card-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3 style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-bottom: 0.75rem;">Python & Vector Computing</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+            Master high-throughput async Python 3.12, PyTorch tensors, embedding algebra, and high-scale vector databases (Qdrant, ChromaDB).
+          </p>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+          </div>
+          <h3 style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-bottom: 0.75rem;">Autonomous Agent Swarms</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+            Architect cyclical graphs with LangGraph, CrewAI, and AutoGen. Implement self-reflection, tree-of-thought planning, and memory.
+          </p>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-bottom: 0.75rem;">Cybersecurity & Red-Teaming</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+            Defend agent systems against prompt injection, ASCII evasion, model poisoning, and unauthorized tool execution with Guardrails.
+          </p>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: #ffffff; margin-bottom: 0.75rem;">Embodied AI & Robotics</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+            Connect multimodal vision-language models with ROS2 robot kinematics, Gazebo simulations, and real-time edge hardware.
+          </p>
+        </div>
+      </div>
+
+      <!-- Comparison Matrix: Legacy vs AI DISHA -->
+      <div class="glass-card reveal-on-scroll delay-2" style="background: rgba(18, 18, 18, 0.95); border: 1px solid var(--border-medium);">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+          <div>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-100); text-transform: uppercase; letter-spacing: 0.1em;">THE STRATEGIC ADVANTAGE</span>
+            <h3 style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: #ffffff;">Why AI DISHA is Radically Different</h3>
+          </div>
+          <button class="btn btn-primary btn-sm open-apply-modal-btn">Apply For Next Cohort</button>
+        </div>
+
+        <div style="overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem;">
+            <thead>
+              <tr style="border-bottom: 1px solid var(--border-medium); color: var(--text-muted); font-family: var(--font-mono); font-size: 0.8rem;">
+                <th style="padding: 1rem 1.25rem;">CURRICULUM PILLAR</th>
+                <th style="padding: 1rem 1.25rem;">TRADITIONAL AI BOOTCAMPS</th>
+                <th style="padding: 1rem 1.25rem; color: #ffffff; background: rgba(223, 223, 223, 0.06); border-radius: var(--radius-sm) var(--radius-sm) 0 0;">AI DISHA AGENT LABS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--border-subtle);">
+                <td style="padding: 1.2rem 1.25rem; font-weight: 600; color: var(--text-primary);">System Focus</td>
+                <td style="padding: 1.2rem 1.25rem; color: var(--text-muted);">Simple prompt engineering & toy chat wrappers</td>
+                <td style="padding: 1.2rem 1.25rem; color: #ffffff; background: rgba(223, 223, 223, 0.04); font-weight: 600;">Cyclic autonomous multi-agent graphs with LangGraph</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-subtle);">
+                <td style="padding: 1.2rem 1.25rem; font-weight: 600; color: var(--text-primary);">Tool Integration</td>
+                <td style="padding: 1.2rem 1.25rem; color: var(--text-muted);">Static REST API calls with no error handling</td>
+                <td style="padding: 1.2rem 1.25rem; color: #ffffff; background: rgba(223, 223, 223, 0.04); font-weight: 600;">Self-healing dynamic code sandboxes & live SQL REPLs</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-subtle);">
+                <td style="padding: 1.2rem 1.25rem; font-weight: 600; color: var(--text-primary);">Cybersecurity</td>
+                <td style="padding: 1.2rem 1.25rem; color: var(--text-muted);">Ignored or mentioned in passing</td>
+                <td style="padding: 1.2rem 1.25rem; color: #ffffff; background: rgba(223, 223, 223, 0.04); font-weight: 600;">Full Red-Teaming, Prompt Injection & Guardrails Defense</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-subtle);">
+                <td style="padding: 1.2rem 1.25rem; font-weight: 600; color: var(--text-primary);">Embodied AI</td>
+                <td style="padding: 1.2rem 1.25rem; color: var(--text-muted);">None (text-only models)</td>
+                <td style="padding: 1.2rem 1.25rem; color: #ffffff; background: rgba(223, 223, 223, 0.04); font-weight: 600;">Multimodal Vision-Language Models + ROS2 Robotics</td>
+              </tr>
+              <tr>
+                <td style="padding: 1.2rem 1.25rem; font-weight: 600; color: var(--text-primary);">Career Outcome</td>
+                <td style="padding: 1.2rem 1.25rem; color: var(--text-muted);">Generic certificates with no placement support</td>
+                <td style="padding: 1.2rem 1.25rem; color: #ffffff; background: rgba(223, 223, 223, 0.04); font-weight: 600;">Guaranteed Industry Internship Matching & Capstone Demo Day</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ==========================================================================
+       Program Section (45-Day AI Practitioner to Agent Builder)
+       ========================================================================== -->
+  <section class="section" id="program">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-tag">
+          <span class="tag-dot"></span>
+          <span>02 // THE 45-DAY BLUEPRINT</span>
+        </div>
+        <h2 class="section-title">45-Day AI Practitioner to AI Agent Builder</h2>
+        <p class="section-description">
+          A rigorous 3-phase curriculum designed to take you from foundational AI principles to architecting production-grade autonomous agent ecosystems.
+        </p>
+      </div>
+
+      <!-- Phase Filter Tabs -->
+      <div class="program-phase-tabs reveal-on-scroll delay-1">
+        <button class="phase-tab-btn active" data-phase="all">All 45 Days</button>
+        <button class="phase-tab-btn" data-phase="phase1">Phase 1 (Days 01–15)</button>
+        <button class="phase-tab-btn" data-phase="phase2">Phase 2 (Days 16–30)</button>
+        <button class="phase-tab-btn" data-phase="phase3">Phase 3 (Days 31–45)</button>
+      </div>
+
+      <!-- Phase Cards Grid -->
+      <div class="phase-card-wrapper reveal-on-scroll delay-2">
+        <!-- Phase 1 Card -->
+        <div class="phase-card" data-phase="phase1">
+          <div>
+            <div class="phase-badge">PHASE 01 // DAYS 01–15</div>
+            <div class="phase-duration">FOUNDATIONS & SECURE TOOLING</div>
+            <h3 class="phase-title">AI & Python Foundations + Cybersecurity</h3>
+            <p class="phase-desc">
+              Establish rock-solid computational mastery. Build asynchronous Python pipelines, deconstruct transformer architectures, and red-team RAG systems against security vulnerabilities.
+            </p>
+            <ul class="phase-highlights">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Asynchronous Python 3.12, Vectorization & PyTorch Tensors</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Attention Mechanics, RoPE & KV-Cache Internals</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Vector Databases (Qdrant/Chroma) & RAG Pipelines</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>AI Red-Teaming, Prompt Injections & Guardrails AI</span>
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-secondary btn-sm view-syllabus-btn" data-day-id="1" style="width: 100%;">
+            <span>Inspect Phase 1 Daily Syllabus</span>
+          </button>
+        </div>
+
+        <!-- Phase 2 Card -->
+        <div class="phase-card" data-phase="phase2">
+          <div>
+            <div class="phase-badge">PHASE 02 // DAYS 16–30</div>
+            <div class="phase-duration">AGENTIC AI & MULTI-TOOL SYSTEMS</div>
+            <h3 class="phase-title">Agentic AI & Autonomous Workflows</h3>
+            <p class="phase-desc">
+              Construct intelligent state machines and multi-agent swarms. Implement dynamic tool calling, self-healing runtime debuggers, and ReAct loop architectures.
+            </p>
+            <ul class="phase-highlights">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>LangGraph StateGraphs, Conditional Routing & Checkpoints</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>CrewAI Role-Based Multi-Agent Collaboration</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Dynamic Tool Calling (SQL, Python Sandbox, Web Search)</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Long-Term Episodic & Semantic Agent Memory Architecture</span>
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-secondary btn-sm view-syllabus-btn" data-day-id="4" style="width: 100%;">
+            <span>Inspect Phase 2 Daily Syllabus</span>
+          </button>
+        </div>
+
+        <!-- Phase 3 Card -->
+        <div class="phase-card" data-phase="phase3">
+          <div>
+            <div class="phase-badge">PHASE 03 // DAYS 31–45</div>
+            <div class="phase-duration">EMBODIED AI, HACKATHON & PLACEMENT</div>
+            <h3 class="phase-title">Robotics, Capstones & Career Launch</h3>
+            <p class="phase-desc">
+              Bridge digital agents with the physical world. Deploy ROS2 robotic controllers, compete in the 48-Hour Agentic Hackathon, and step into guaranteed industry internships.
+            </p>
+            <ul class="phase-highlights">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Multimodal Vision-Language-Action Models & ROS2 Integration</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Gazebo Spatial Robotics Simulation & Edge Jetson Deployments</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>48-Hour Agentic Capstone Hackathon with VC Judges</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>100% Industry Internship Matching & AI System Design Interviews</span>
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-secondary btn-sm view-syllabus-btn" data-day-id="6" style="width: 100%;">
+            <span>Inspect Phase 3 Daily Syllabus</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ==========================================================================
+       Curriculum Section
+       ========================================================================== -->
+  <section class="section" id="curriculum">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-tag">
+          <span class="tag-dot"></span>
+          <span>03 // MODULAR BREAKDOWN</span>
+        </div>
+        <h2 class="section-title">The Engineering Curriculum Matrix</h2>
+        <p class="section-description">
+          Each module is paired with mandatory production code reviews, containerized sandbox labs, and architectural design evaluations.
+        </p>
+      </div>
+
+      <div class="curriculum-accordion-list reveal-on-scroll delay-1">
+        <!-- Module 01 -->
+        <div class="curriculum-item open">
+          <button class="curriculum-trigger">
+            <div class="curriculum-trigger-left">
+              <span class="module-number">MOD 01</span>
+              <span>Python for High-Performance AI & Vector Computing</span>
+            </div>
+            <svg class="curriculum-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="curriculum-content">
+            <div class="curriculum-inner-grid">
+              <ul class="curriculum-subtopics">
+                <li>Async event loops & non-blocking streaming I/O</li>
+                <li>NumPy vectorization & PyTorch GPU tensor operations</li>
+                <li>Pydantic v2 strict type validation schemas</li>
+                <li>Memory optimization & token rate limit orchestrators</li>
+              </ul>
+              <div class="curriculum-tools-box">
+                <div class="tools-title">Stack & Frameworks:</div>
+                <div class="tool-tags-wrapper">
+                  <span class="tool-tag">Python 3.12</span>
+                  <span class="tool-tag">PyTorch 2.4</span>
+                  <span class="tool-tag">NumPy</span>
+                  <span class="tool-tag">Pydantic v2</span>
+                  <span class="tool-tag">Asyncio</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 02 -->
+        <div class="curriculum-item">
+          <button class="curriculum-trigger">
+            <div class="curriculum-trigger-left">
+              <span class="module-number">MOD 02</span>
+              <span>Neural Architectures, Transformers & LLM Internals</span>
+            </div>
+            <svg class="curriculum-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="curriculum-content">
+            <div class="curriculum-inner-grid">
+              <ul class="curriculum-subtopics">
+                <li>Self-attention & Multi-head attention math from scratch</li>
+                <li>Rotary Position Embeddings (RoPE) & Context expansion</li>
+                <li>KV-cache optimization & FlashAttention mechanics</li>
+                <li>Model quantization: AWQ, GPTQ & GGUF formats</li>
+              </ul>
+              <div class="curriculum-tools-box">
+                <div class="tools-title">Stack & Frameworks:</div>
+                <div class="tool-tags-wrapper">
+                  <span class="tool-tag">PyTorch</span>
+                  <span class="tool-tag">Hugging Face</span>
+                  <span class="tool-tag">FlashAttention-2</span>
+                  <span class="tool-tag">vLLM</span>
+                  <span class="tool-tag">Ollama</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 03 -->
+        <div class="curriculum-item">
+          <button class="curriculum-trigger">
+            <div class="curriculum-trigger-left">
+              <span class="module-number">MOD 03</span>
+              <span>Applied AI Tools, Vector Databases & Enterprise RAG</span>
+            </div>
+            <svg class="curriculum-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="curriculum-content">
+            <div class="curriculum-inner-grid">
+              <ul class="curriculum-subtopics">
+                <li>Dense vs. Sparse embedding retrieval & Reciprocal Rank Fusion</li>
+                <li>High-scale HNSW indexing with Qdrant and ChromaDB</li>
+                <li>Self-querying & hierarchical parent-document retrievers</li>
+                <li>GraphRAG: Knowledge graph entity linking for multi-hop queries</li>
+              </ul>
+              <div class="curriculum-tools-box">
+                <div class="tools-title">Stack & Frameworks:</div>
+                <div class="tool-tags-wrapper">
+                  <span class="tool-tag">Qdrant</span>
+                  <span class="tool-tag">ChromaDB</span>
+                  <span class="tool-tag">Neo4j GraphRAG</span>
+                  <span class="tool-tag">LlamaIndex</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 04 -->
+        <div class="curriculum-item">
+          <button class="curriculum-trigger">
+            <div class="curriculum-trigger-left">
+              <span class="module-number">MOD 04</span>
+              <span>AI Safety, Red-Teaming & GenAI Cybersecurity</span>
+            </div>
+            <svg class="curriculum-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="curriculum-content">
+            <div class="curriculum-inner-grid">
+              <ul class="curriculum-subtopics">
+                <li>Direct and indirect prompt injection attack vectors</li>
+                <li>Data exfiltration prevention & sandboxed execution bounds</li>
+                <li>NeMo Guardrails & Guardrails AI programmatic validators</li>
+                <li>Automated penetration test harnesses for agent endpoints</li>
+              </ul>
+              <div class="curriculum-tools-box">
+                <div class="tools-title">Stack & Frameworks:</div>
+                <div class="tool-tags-wrapper">
+                  <span class="tool-tag">Guardrails AI</span>
+                  <span class="tool-tag">NeMo Guardrails</span>
+                  <span class="tool-tag">Garak PenTest</span>
+                  <span class="tool-tag">PyRIT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 05 -->
+        <div class="curriculum-item">
+          <button class="curriculum-trigger">
+            <div class="curriculum-trigger-left">
+              <span class="module-number">MOD 05</span>
+              <span>Autonomous Agent Frameworks (LangGraph & CrewAI)</span>
+            </div>
+            <svg class="curriculum-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="curriculum-content">
+            <div class="curriculum-inner-grid">
+              <ul class="curriculum-subtopics">
+                <li>ReAct reasoning-action loops with dynamic reflection</li>
+                <li>StateGraph cyclicity, checkpoints & state persistence</li>
+                <li>Hierarchical role delegation with CrewAI & AutoGen swarms</li>
+                <li>Human-in-the-loop validation & manual intervention checkpoints</li>
+              </ul>
+              <div class="curriculum-tools-box">
+                <div class="tools-title">Stack & Frameworks:</div>
+                <div class="tool-tags-wrapper">
+                  <span class="tool-tag">LangGraph</span>
+                  <span class="tool-tag">CrewAI</span>
+                  <span class="tool-tag">AutoGen</span>
+                  <span class="tool-tag">LangChain</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 06 -->
+        <div class="curriculum-item">
+          <button class="curriculum-trigger">
+            <div class="curriculum-trigger-left">
+              <span class="module-number">MOD 06</span>
+              <span>Multi-Modal AI, Robotics & ROS2 Physical Simulation</span>
+            </div>
+            <svg class="curriculum-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="curriculum-content">
+            <div class="curriculum-inner-grid">
+              <ul class="curriculum-subtopics">
+                <li>Vision-Language-Action (VLA) architectures & Spatial grounding</li>
+                <li>ROS2 publish/subscribe nodes & hardware message passing</li>
+                <li>Gazebo robotics simulation environment setup</li>
+                <li>Deploying agent inference models on NVIDIA Jetson Edge AI</li>
+              </ul>
+              <div class="curriculum-tools-box">
+                <div class="tools-title">Stack & Frameworks:</div>
+                <div class="tool-tags-wrapper">
+                  <span class="tool-tag">ROS2 Humble</span>
+                  <span class="tool-tag">Gazebo</span>
+                  <span class="tool-tag">OpenVLA</span>
+                  <span class="tool-tag">NVIDIA Isaac</span>
+                  <span class="tool-tag">Jetson SDK</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ==========================================================================
+       AI Agents Showcase & Interactive Live Simulator
+       ========================================================================== -->
+  <section class="section" id="agents">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-tag">
+          <span class="tag-dot"></span>
+          <span>04 // LIVE SANDBOX</span>
+        </div>
+        <h2 class="section-title">Autonomous AI Agent Architectures</h2>
+        <p class="section-description">
+          During the 45 days, every engineer builds four flagship production-grade agents. Test and interact with them live in the sandbox below.
+        </p>
+      </div>
+
+      <!-- Interactive Agent Sandbox Container -->
+      <div class="agent-sandbox-wrapper reveal-on-scroll delay-1">
+        <!-- Sandbox Top Bar -->
+        <div class="sandbox-header">
+          <div class="sandbox-window-controls">
+            <span class="window-dot"></span>
+            <span class="window-dot"></span>
+            <span class="window-dot"></span>
+          </div>
+
+          <div class="sandbox-title-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+              <line x1="6" y1="6" x2="6.01" y2="6"></line>
+              <line x1="6" y1="18" x2="6.01" y2="18"></line>
+            </svg>
+            <span>AI DISHA LIVE AGENT ENVIRONMENT</span>
+          </div>
+
+          <div class="sandbox-status-indicator">
+            <span class="sandbox-status-dot"></span>
+            <span id="agent-badge-label">AUTONOMOUS SYNTHESIS</span>
+          </div>
+        </div>
+
+        <!-- Agent Tabs Selector (The 4 Flagship Agents) -->
+        <div class="agent-tabs-nav">
+          <button class="agent-tab-btn active" data-agent="research">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <span>01. Research Agent</span>
+          </button>
+
+          <button class="agent-tab-btn" data-agent="code">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            <span>02. Code Assistant</span>
+          </button>
+
+          <button class="agent-tab-btn" data-agent="automation">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            <span>03. Automation Agent</span>
+          </button>
+
+          <button class="agent-tab-btn" data-agent="multitool">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            <span>04. Multi-Tool Agent</span>
+          </button>
+        </div>
+
+        <!-- Sandbox Body -->
+        <div class="sandbox-body">
+          <!-- Sidebar Meta & Presets -->
+          <div class="sandbox-sidebar">
+            <div>
+              <h3 class="agent-meta-title" id="agent-meta-title">Research Agent</h3>
+              <p class="agent-meta-desc" id="agent-meta-desc">
+                Orchestrates multi-source academic paper retrieval, fact-checking, citation extraction, and structured intelligence synthesis.
+              </p>
+
+              <ul class="agent-capabilities-list" id="agent-capabilities-list">
+                <!-- Dynamically Populated -->
+              </ul>
+            </div>
+
+            <div class="prompt-presets-container" id="prompt-presets-container">
+              <!-- Dynamically Populated Presets -->
+            </div>
+          </div>
+
+          <!-- Live Terminal Output & Interactive Input -->
+          <div class="sandbox-terminal-view scanline-effect">
+            <div class="terminal-scroll-area" id="terminal-scroll-area">
+              <!-- Stream entries populate dynamically -->
+            </div>
+
+            <div class="terminal-input-bar">
+              <span style="color: var(--color-200); font-family: var(--font-mono); font-size: 0.85rem;">❯</span>
+              <input type="text" id="agent-prompt-input" placeholder="Type a custom instruction or pick an example directive..." autocomplete="off">
+              <button class="run-prompt-btn" id="run-agent-prompt-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <span>Execute Directive</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ==========================================================================
+       Projects Section
+       ========================================================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-tag">
+          <span class="tag-dot"></span>
+          <span>05 // PORTFOLIO CAPSTONES</span>
+        </div>
+        <h2 class="section-title">Production Projects Engineered by Fellows</h2>
+        <p class="section-description">
+          Graduate with production-ready repositories deployed on cloud GPU clusters, complete with automated test coverage, CI/CD pipelines, and enterprise docs.
+        </p>
+      </div>
+
+      <div class="grid-2 reveal-on-scroll delay-1">
+        <!-- Project 1 -->
+        <div class="glass-card">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+            <span class="tool-tag">LEGAL & REGULATORY AI</span>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: #ffffff;">● PRODUCTION VERIFIED</span>
+          </div>
+          <h3 style="font-family: var(--font-display); font-size: 1.45rem; font-weight: 700; color: #ffffff; margin-bottom: 0.75rem;">Autonomous Cross-Jurisdiction Regulatory Auditor</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+            A multi-agent compliance system that ingests global EU AI Act & SEC filings, performs GraphRAG cross-citations, and generates certified audit briefs in real time.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+            <span class="tool-tag">LangGraph</span>
+            <span class="tool-tag">Qdrant</span>
+            <span class="tool-tag">Neo4j</span>
+            <span class="tool-tag">FastAPI</span>
+            <span class="tool-tag">Docker</span>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border-subtle); padding-top: 1.25rem;">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Latency: 480ms / 99.2% Accuracy</span>
+            <a href="#agents" class="btn btn-outline btn-sm">Inspect System Design</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-card">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+            <span class="tool-tag">SELF-HEALING DEVOPS</span>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: #ffffff;">● PRODUCTION VERIFIED</span>
+          </div>
+          <h3 style="font-family: var(--font-display); font-size: 1.45rem; font-weight: 700; color: #ffffff; margin-bottom: 0.75rem;">Autonomous Kubernetes Incident Triage & PR Generator</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+            An observability agent connected to Prometheus and OpenTelemetry. Diagnoses cluster OOM crashes, reproduces stack traces in isolated sandboxes, and commits patch PRs to GitHub.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+            <span class="tool-tag">CrewAI</span>
+            <span class="tool-tag">Prometheus</span>
+            <span class="tool-tag">GitHub API</span>
+            <span class="tool-tag">PyTest Sandbox</span>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border-subtle); padding-top: 1.25rem;">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">MTTR Reduction: 78%</span>
+            <a href="#agents" class="btn btn-outline btn-sm">Inspect System Design</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="glass-card">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+            <span class="tool-tag">EMBODIED ROBOTICS</span>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: #ffffff;">● PRODUCTION VERIFIED</span>
+          </div>
+          <h3 style="font-family: var(--font-display); font-size: 1.45rem; font-weight: 700; color: #ffffff; margin-bottom: 0.75rem;">Multimodal Vision-Language Robotic Warehouse Inspector</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+            Connects spatial vision transformers with ROS2 node controllers to pilot simulated autonomous rovers for inventory anomaly detection and hazard prevention.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+            <span class="tool-tag">ROS2 Humble</span>
+            <span class="tool-tag">Gazebo</span>
+            <span class="tool-tag">OpenVLA</span>
+            <span class="tool-tag">NVIDIA Jetson</span>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border-subtle); padding-top: 1.25rem;">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Inference: 30 FPS Edge Real-Time</span>
+            <a href="#agents" class="btn btn-outline btn-sm">Inspect System Design</a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="glass-card">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+            <span class="tool-tag">FINANCIAL QUANT AGENT</span>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: #ffffff;">● PRODUCTION VERIFIED</span>
+          </div>
+          <h3 style="font-family: var(--font-display); font-size: 1.45rem; font-weight: 700; color: #ffffff; margin-bottom: 0.75rem;">Algorithmic Market Intelligence Swarm with Live SQL REPL</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+            A swarm that streams live exchange WebSocket ticks, executes Pandas quantitative models in a secure sandbox, and dynamically rebalances mock portfolio weights.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+            <span class="tool-tag">Python REPL</span>
+            <span class="tool-tag">PostgreSQL</span>
+            <span class="tool-tag">WebSockets</span>
+            <span class="tool-tag">ReAct Loop</span>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border-subtle); padding-top: 1.25rem;">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Sharpe: 2.34 / Real-Time RAG</span>
+            <a href="#agents" class="btn btn-outline btn-sm">Inspect System Design</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ==========================================================================
+       Hackathons & Buildathons Arena
+       ========================================================================== -->
+  <section class="section" id="hackathons">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-tag">
+          <span class="tag-dot"></span>
+          <span>06 // HIGH-STAKES COMPETITION</span>
+        </div>
+        <h2 class="section-title">48-Hour Agentic Hackathons</h2>
+        <p class="section-description">
+          Test your engineering under pressure. Collaborate with fellow builders, pitch to venture capitalists, and compete for grants and incubation tracks.
+        </p>
+      </div>
+
+      <!-- Live Hackathon Countdown Banner Card -->
+      <div class="glass-card reveal-on-scroll delay-1" style="background: linear-gradient(135deg, rgba(28, 28, 28, 0.9) 0%, rgba(14, 14, 14, 0.95) 100%); border: 1px solid var(--border-medium); margin-bottom: 3rem;">
+        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 2.5rem; align-items: center;">
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.25rem 0.75rem; background: rgba(223, 223, 223, 0.08); border-radius: var(--radius-full); font-family: var(--font-mono); font-size: 0.75rem; color: #ffffff; margin-bottom: 1.25rem;">
+              <span style="width: 6px; height: 6px; border-radius: 50%; background: #ffffff; box-shadow: 0 0 8px #ffffff;"></span>
+              <span>NEXT COHORT BUILDATHON COUNTDOWN</span>
+            </div>
+            <h3 style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: #ffffff; margin-bottom: 0.75rem;">Global Autonomous Agent Hackathon 2026</h3>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.75rem;">
+              Build a breakthrough autonomous multi-agent product in 48 hours. Judged on system autonomy, tool invocation elegance, latency resilience, and enterprise feasibility.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <button class="btn btn-primary btn-sm open-apply-modal-btn">Register for Hackathon Track</button>
+              <a href="#curriculum" class="btn btn-outline btn-sm">View Judging Matrix</a>
+            </div>
+          </div>
+
+          <!-- Countdown Grid -->
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; text-align: center;">
+            <div style="background: rgba(16, 16, 16, 0.8); border: 1px solid var(--border-medium); border-radius: var(--radius-md); padding: 1.25rem 0.5rem;">
+              <div id="hackathon-days" style="font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: #ffffff;">18</div>
+              <div style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase;">Days</div>
+            </div>
+            <div style="background: rgba(16, 16, 16, 0.8); border: 1px solid var(--border-medium); border-radius: var(--radius-md); padding: 1.25rem 0.5rem;">
+              <div id="hackathon-hours" style="font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: #ffffff;">14</div>
+              <div style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase;">Hours</div>
+            </div>
+            <div style="background: rgba(16, 16, 16, 0.8); border: 1px solid var(--border-medium); border-radius: var(--radius-md); padding: 1.25rem 0.5rem;">
+              <div id="hackathon-mins" style="font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: #ffffff;">35</div>
+              <div style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase;">Mins</div>
+            </div>
+            <div style="background: rgba(16, 16, 16, 0.8); border: 1px solid var(--border-medium); border-radius: var(--radius-md); padding: 1.25rem 0.5rem;">
+              <div id="hackathon-secs" style="font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: #ffffff;">12</div>
+              <div style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase;">Secs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hackathon Perks 3-Grid -->
+      <div class="grid-3 reveal-on-scroll delay-2">
+        <div class="glass-card">
+          <div class="card-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <h4 style="font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: #ffffff; margin-bottom: 0.5rem;">$15,000+ Prize Pool & Cloud Grants</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">
+            Top 3 teams receive cash rewards, $50,000 in GPU compute credits, and fast-track interviews with top AI labs.
+          </p>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h4 style="font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: #ffffff; margin-bottom: 0.5rem;">Direct Venture Capital Jury</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">
+            Pitch directly to tier-1 seed investors and AI venture partners actively looking to back agent startup founders.
+          </p>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <h4 style="font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: #ffffff; margin-bottom: 0.5rem;">Live 24/7 Senior Mentor Support</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">
+            Get unblocked in real time by seasoned LLM research scientists and distributed systems architects throughout the sprint.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ==========================================================================
+       Career Section & Interactive ROI Calculator
+       ========================================================================== -->
+  <section class="section" id="career">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-tag">
+          <span class="tag-dot"></span>
+          <span>07 // CAREER ACCELERATION</span>
+        </div>
+        <h2 class="section-title">Guaranteed Internship & Career Transformation</h2>
+        <p class="section-description">
+          Calculate your projected role transition, market compensation range, and skills unlocked upon completing the AI DISHA masterclass.
+        </p>
+      </div>
+
+      <!-- Interactive Calculator Component -->
+      <div class="career-calc-container reveal-on-scroll delay-1">
+        <!-- Controls Column -->
+        <div>
+          <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-100); text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 0.5rem;">DYNAMIC CAREER PATH PROJECTION</span>
+          <h3 style="font-family: var(--font-display); font-size: 1.65rem; font-weight: 700; color: #ffffff; margin-bottom: 1.5rem;">Select Your Current Profile</h3>
+
+          <div class="calc-control-group">
+            <label class="calc-label" for="calc-background-select">Current Professional Background:</label>
+            <select class="calc-select" id="calc-background-select">
+              <option value="swe">Software Engineer (Backend / Full Stack)</option>
+              <option value="data">Data Analyst / BI Specialist</option>
+              <option value="student">Engineering / CS Student or Recent Graduate</option>
+              <option value="frontend">Frontend / UI Developer</option>
+              <option value="pm">Technical Product Manager / Solutions Architect</option>
+            </select>
+          </div>
+
+          <div class="calc-control-group">
+            <label class="calc-label" for="calc-currency-select">Display Currency:</label>
+            <select class="calc-select" id="calc-currency-select">
+              <option value="usd">USD ($ Global Market Benchmark)</option>
+              <option value="inr">INR (₹ India Tech Market Benchmark)</option>
+            </select>
+          </div>
+
+          <div style="background: rgba(223, 223, 223, 0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem;">
+            <div style="font-size: 0.85rem; font-weight: 600; color: #ffffff; margin-bottom: 0.5rem;">✦ AI DISHA Placement Guarantee:</div>
+            <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5;">
+              Every graduating fellow with verified capstone passing scores is directly matched with vetted partner AI startups and enterprise innovation labs for paid internships and full-time placement tracks.
+            </p>
+          </div>
+        </div>
+
+        <!-- Dynamic Results Column -->
+        <div class="calc-results-card">
+          <div>
+            <div class="results-badge">TARGET POST-GRADUATION ROLE</div>
+            <div class="target-role-name" id="calc-target-role">Autonomous AI Agent Architect</div>
+
+            <div class="salary-metric-box">
+              <div>
+                <div class="salary-metric-title">TARGET COMPENSATION</div>
+                <div class="salary-metric-val" id="calc-salary-range">$165,000 – $220,000+</div>
+              </div>
+              <div>
+                <div class="salary-metric-title">AVERAGE UPLIFT</div>
+                <div class="salary-metric-val" id="calc-salary-uplift" style="color: #ffffff;">+165%</div>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; font-size: 0.85rem;">
+              <span style="color: var(--text-muted);">Placement Horizon:</span>
+              <span id="calc-time-offer" style="color: #ffffff; font-weight: 600;">45 Days + 30 Day Internship</span>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; font-size: 0.85rem;">
+              <span style="color: var(--text-muted);">Industry Demand Tier:</span>
+              <span id="calc-demand-badge" style="color: #ffffff; font-weight: 600;">Ultra-High (4.8x YoY Job Growth)</span>
+            </div>
+
+            <div style="margin-bottom: 1.5rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.6rem;">Key In-Demand Competencies Unlocked:</div>
+              <div class="tool-tags-wrapper" id="calc-skills-list">
+                <!-- Dynamically Populated -->
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-primary open-apply-modal-btn" style="width: 100%;">
+            <span>Enroll in Target Track</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ==========================================================================
+       Contact & FAQ Section
+       ========================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-tag">
+          <span class="tag-dot"></span>
+          <span>08 // INITIATE DIALOGUE</span>
+        </div>
+        <h2 class="section-title">Connect with Admissions & Technical Advisors</h2>
+        <p class="section-description">
+          Have questions about cohort prerequisites, time commitments, or enterprise sponsorship? Reach out to our technical admissions team.
+        </p>
+      </div>
+
+      <div class="grid-2 reveal-on-scroll delay-1" style="margin-bottom: 4rem;">
+        <!-- Contact Form -->
+        <div class="glass-card">
+          <h3 style="font-family: var(--font-display); font-size: 1.45rem; font-weight: 700; color: #ffffff; margin-bottom: 0.5rem;">Send Technical Inquiry</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.75rem;">
+            Directly transmitted to our Lead AI Instructor & Admissions Committee.
+          </p>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="e.g. Alex Morgan" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Corporate or Personal Email</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="alex@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-topic">Inquiry Focus</label>
+              <select id="contact-topic" class="form-control">
+                <option value="enrollment">Cohort Enrollment & Eligibility</option>
+                <option value="enterprise">Enterprise Team Training Sponsorship</option>
+                <option value="internship">Hiring Partner & Internship Placement</option>
+                <option value="curriculum">Technical Curriculum Deep Dive</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message or Questions</label>
+              <textarea id="contact-message" class="form-control" rows="4" placeholder="Briefly describe your background, learning goals, or questions..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>Transmit Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- FAQ Search & Accordion -->
+        <div>
+          <div style="margin-bottom: 1.5rem;">
+            <input type="text" id="faq-search-input" class="form-control" placeholder="🔍 Search FAQs (e.g. prerequisites, hours, internship)...">
+          </div>
+
+          <div class="faq-accordion-list">
+            <!-- FAQ 1 -->
+            <div class="curriculum-item faq-accordion-item open" style="margin-bottom: 1rem;">
+              <button class="curriculum-trigger faq-trigger">
+                <span class="faq-question" style="font-size: 1rem;">What are the prerequisites for the 45-Day Program?</span>
+                <svg class="curriculum-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="curriculum-content">
+                <p class="faq-answer" style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; padding-top: 0.75rem;">
+                  Basic programming fluency in any language (Python, JavaScript, C++, Java) and familiarity with core algorithms. We provide an intensive Day 01–05 Python and Vector tensor primer to bring everyone up to high-speed async AI engineering standards.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="curriculum-item faq-accordion-item" style="margin-bottom: 1rem;">
+              <button class="curriculum-trigger faq-trigger">
+                <span class="faq-question" style="font-size: 1rem;">How does the Industry Internship Matching operate?</span>
+                <svg class="curriculum-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="curriculum-content">
+                <p class="faq-answer" style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; padding-top: 0.75rem;">
+                  Upon passing the Phase 3 Capstone Hackathon, students are matched directly with our global partner network of AI startups, venture-backed companies, and enterprise innovation labs. Fellows receive 1-on-1 portfolio reviews and mock AI system design interviews.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="curriculum-item faq-accordion-item" style="margin-bottom: 1rem;">
+              <button class="curriculum-trigger faq-trigger">
+                <span class="faq-question" style="font-size: 1rem;">What is the weekly time commitment?</span>
+                <svg class="curriculum-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="curriculum-content">
+                <p class="faq-answer" style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; padding-top: 0.75rem;">
+                  Approximately 10 to 14 hours per week, structured around interactive live masterclasses, asynchronous sandbox code labs, weekend hackathon sprints, and mentor office hours. Sessions are recorded for working professionals.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="curriculum-item faq-accordion-item" style="margin-bottom: 1rem;">
+              <button class="curriculum-trigger faq-trigger">
+                <span class="faq-question" style="font-size: 1rem;">Do I get access to GPU compute and API keys?</span>
+                <svg class="curriculum-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="curriculum-content">
+                <p class="faq-answer" style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; padding-top: 0.75rem;">
+                  Yes! All enrolled fellows receive dedicated cloud sandbox GPU compute credits, access to frontier LLM APIs, and pre-configured Docker containers with ROS2, Gazebo, LangGraph, and Qdrant.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Global Footer
+       ========================================================================== -->
+  <footer style="background: #0b0b0b; border-top: 1px solid var(--border-subtle); padding: 5rem 0 2.5rem 0; position: relative; z-index: 2;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.5fr; gap: 3rem; margin-bottom: 4rem;">
+        <!-- Col 1: Brand Info -->
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <span class="brand-text">AI DISHA</span>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.5rem; max-width: 320px;">
+            The definitive global accelerator for Autonomous AI Agent Architects, LLM Systems Engineers, and Applied Robotics Builders.
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">
+            ● SYSTEM STATUS: ALL AGENT NODES OPERATIONAL
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #ffffff; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.25rem;">PLATFORM</div>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.88rem;">
+            <li><a href="#about" style="color: var(--text-secondary); text-decoration: none;">About AI DISHA</a></li>
+            <li><a href="#program" style="color: var(--text-secondary); text-decoration: none;">45-Day Program</a></li>
+            <li><a href="#curriculum" style="color: var(--text-secondary); text-decoration: none;">Curriculum Matrix</a></li>
+            <li><a href="#agents" style="color: var(--text-secondary); text-decoration: none;">AI Agent Playground</a></li>
+            <li><a href="#projects" style="color: var(--text-secondary); text-decoration: none;">Student Capstones</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Ecosystem -->
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #ffffff; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.25rem;">ECOSYSTEM</div>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.88rem;">
+            <li><a href="#hackathons" style="color: var(--text-secondary); text-decoration: none;">48-Hour Hackathons</a></li>
+            <li><a href="#career" style="color: var(--text-secondary); text-decoration: none;">Career & Placement</a></li>
+            <li><a href="#career" style="color: var(--text-secondary); text-decoration: none;">Salary Calculator</a></li>
+            <li><a href="#contact" style="color: var(--text-secondary); text-decoration: none;">Admissions FAQ</a></li>
+            <li><a href="#contact" style="color: var(--text-secondary); text-decoration: none;">Enterprise Training</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #ffffff; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.25rem;">FRONTIER INTELLIGENCE BRIEF</div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 1rem;">
+            Receive our weekly breakdown of new autonomous agent research, jailbreak vulnerabilities, and architectural blueprints.
+          </p>
+          <form id="newsletter-form" style="display: flex; gap: 0.5rem;">
+            <input type="email" class="form-control" style="font-size: 0.85rem; padding: 0.6rem 0.85rem;" placeholder="engineer@domain.com" required>
+            <button type="submit" class="btn btn-primary btn-sm" style="flex-shrink: 0;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border-subtle); padding-top: 2rem; flex-wrap: wrap; gap: 1rem;">
+        <div style="font-size: 0.82rem; color: var(--text-muted);">
+          © 2026 AI DISHA Lab. All rights reserved. Direction to Future Intelligence.
+        </div>
+        <div style="display: flex; gap: 1.5rem; font-size: 0.82rem;">
+          <a href="#privacy" style="color: var(--text-muted); text-decoration: none;">Privacy Protocol</a>
+          <a href="#terms" style="color: var(--text-muted); text-decoration: none;">Terms of Service</a>
+          <a href="#security" style="color: var(--text-muted); text-decoration: none;">Security & Red-Teaming Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Interactive Modals
+       ========================================================================== -->
+
+  <!-- 1. Multi-Step Cohort Intake / Application Modal -->
+  <div class="modal-overlay" id="apply-modal" role="dialog" aria-modal="true" aria-labelledby="apply-modal-heading">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close application dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Step 1: Candidate Details -->
+      <form id="ai-disha-apply-form">
+        <div id="form-step-1">
+          <div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.25rem 0.65rem; background: rgba(223, 223, 223, 0.08); border-radius: var(--radius-full); font-family: var(--font-mono); font-size: 0.72rem; color: #ffffff; margin-bottom: 0.75rem;">
+            <span>STEP 1 OF 2 // CANDIDATE PROFILE</span>
+          </div>
+          <h2 id="apply-modal-heading" style="font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; color: #ffffff; margin-bottom: 0.5rem;">Join the AI DISHA Cohort</h2>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.75rem;">
+            45-Day Intensive AI Practitioner to Autonomous Agent Builder Program.
+          </p>
+
+          <div class="form-group">
+            <label class="form-label" for="applicant-name">Full Name *</label>
+            <input type="text" id="applicant-name" class="form-control" placeholder="e.g. Samantha Vance" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="applicant-email">Email Address *</label>
+            <input type="email" id="applicant-email" class="form-control" placeholder="samantha@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="applicant-phone">WhatsApp / Phone (for admissions interview scheduling)</label>
+            <input type="tel" id="applicant-phone" class="form-control" placeholder="+1 (555) 000-0000 or +91 98765 43210">
+          </div>
+
+          <button type="button" class="btn btn-primary" id="form-next-step-btn" style="width: 100%; margin-top: 1rem;">
+            <span>Continue to Track Selection</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Step 2: Experience & Focus Track -->
+        <div id="form-step-2" style="display: none;">
+          <div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.25rem 0.65rem; background: rgba(223, 223, 223, 0.08); border-radius: var(--radius-full); font-family: var(--font-mono); font-size: 0.72rem; color: #ffffff; margin-bottom: 0.75rem;">
+            <span>STEP 2 OF 2 // TECHNICAL BACKGROUND</span>
+          </div>
+          <h2 style="font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; color: #ffffff; margin-bottom: 0.5rem;">Select Focus Specialization</h2>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.75rem;">
+            Help our mentors calibrate your capstone track and partner internship matching.
+          </p>
+
+          <div class="form-group">
+            <label class="form-label" for="applicant-experience">Current Experience Level</label>
+            <select id="applicant-experience" class="form-control">
+              <option value="intermediate">1–3 Years Software/Data Engineering</option>
+              <option value="senior">3–7+ Years Senior Engineering / Tech Lead</option>
+              <option value="student">Student / Fresh Computer Science Graduate</option>
+              <option value="founder">AI Founder / Technical Executive</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="applicant-track">Primary Capstone Focus</label>
+            <select id="applicant-track" class="form-control">
+              <option value="agents">Autonomous Multi-Agent Systems (LangGraph/CrewAI)</option>
+              <option value="robotics">Embodied AI & Robotics (ROS2/Gazebo)</option>
+              <option value="security">GenAI Cybersecurity & Red-Teaming</option>
+              <option value="enterprise">Enterprise Workflow Automation & Scaled RAG</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="applicant-motivation">What is your primary goal for AI DISHA?</label>
+            <textarea id="applicant-motivation" class="form-control" rows="3" placeholder="e.g. Build an autonomous agent startup, transition to Senior AI Engineer role, or lead enterprise AI transformation..."></textarea>
+          </div>
+
+          <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+            <button type="button" class="btn btn-outline" id="form-prev-step-btn" style="flex: 1;">Back</button>
+            <button type="submit" class="btn btn-primary" id="form-submit-final-btn" style="flex: 2;">
+              <span>Submit Application</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Success Confirmation State -->
+        <div id="form-success-state" style="display: none; text-align: center; padding: 2rem 1rem;">
+          <div style="width: 64px; height: 64px; border-radius: 50%; background: #ffffff; color: #101010; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; box-shadow: 0 0 25px rgba(223, 223, 223, 0.4);">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h2 style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: #ffffff; margin-bottom: 0.75rem;">Application Transmitted</h2>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 2rem;">
+            Thank you for applying to the <strong>AI DISHA 45-Day Program</strong>. Our Admissions Committee is reviewing your technical background. We have dispatched a confirmation email and will reach out within 24 hours to schedule your technical onboarding briefing.
+          </p>
+          <button type="button" class="btn btn-outline modal-close-btn" style="position: static; border-radius: var(--radius-full); padding: 0.75rem 2rem; display: inline-flex; width: auto; height: auto;">
+            <span>Return to AI DISHA Explorer</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. Day-by-Day Syllabus Deep Dive Modal -->
+  <div class="modal-overlay" id="syllabus-modal" role="dialog" aria-modal="true" aria-labelledby="modal-day-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn modal-backdrop-close" aria-label="Close syllabus dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div style="margin-bottom: 1.5rem;">
+        <span class="phase-badge" id="modal-day-tag">PHASE 01 // DAY 01–05</span>
+        <h2 id="modal-day-title" style="font-family: var(--font-display); font-size: 1.65rem; font-weight: 700; color: #ffffff; margin-top: 0.5rem; margin-bottom: 0.75rem;">
+          Python for High-Performance AI & Vector Computing
+        </h2>
+        <p id="modal-day-overview" style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+          Master modern asynchronous Python 3.12+, vectorized tensor operations with NumPy/PyTorch, memory management, and typing for large-scale AI pipelines.
+        </p>
+      </div>
+
+      <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.25rem; margin-bottom: 1.5rem;">
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-100); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.75rem;">
+          CORE ENGINEERING TOPICS COVERED:
+        </div>
+        <ul id="modal-topics-list" style="list-style: none; padding-left: 0;">
+          <!-- Dynamically Populated -->
+        </ul>
+      </div>
+
+      <div style="background: rgba(223, 223, 223, 0.04); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1.5rem;">
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #ffffff; margin-bottom: 0.35rem;">✦ MANDATORY HANDS-ON LAB:</div>
+        <div id="modal-lab-text" style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+          Build a high-throughput async batch token processing engine with rate-limiting and automatic retries.
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border-subtle); padding-top: 1.25rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <span style="font-size: 0.78rem; color: var(--text-muted); display: block;">VERIFIED DELIVERABLE:</span>
+          <span id="modal-deliverable-text" style="font-size: 0.85rem; color: #ffffff; font-weight: 500;">Production-ready Python benchmark pipeline repository.</span>
+        </div>
+        <button class="btn btn-primary btn-sm open-apply-modal-btn">Enroll In This Track</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Toast Notification Container -->
+  <div id="global-toast" class="toast-notification" role="status" aria-live="polite"></div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/particles.js"></script>
+  <script src="js/agent-sandbox.js"></script>
+  <script src="js/curriculum.js"></script>
+  <script src="js/career-calc.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
