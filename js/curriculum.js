@@ -1,107 +1,152 @@
 /**
  * AI DISHA — Curriculum & 45-Day Program Explorer Engine
- * Handles phase filtering, day-by-day modal deep dives, and syllabus accordions.
+ * Aligned with the official AI DISHA Program Document
+ * 9 Phases (Days 1–45) | ~70 Total Learning Hours | 3–4 Live Sessions/Week
  */
 
 (function () {
   const syllabusData = {
     1: {
-      day: 'Day 01–05',
-      title: 'Python for High-Performance AI & Vector Computing',
-      phase: 'Phase 1',
-      overview: 'Master modern asynchronous Python 3.12+, vectorized tensor operations with NumPy/PyTorch, memory management, and typing for large-scale AI pipelines.',
+      phaseNumber: 'Phase 1',
+      day: 'Days 1–10',
+      title: 'Python Foundation: Basics → APIs → Mini Chatbot',
+      hours: '~15 Hours Live & Labs',
+      overview: 'Master core programming fundamentals, data structures, asynchronous functions, API integrations, and construct your first working conversational mini-chatbot.',
       topics: [
-        'Asyncio event loops & concurrent LLM API calling',
-        'NumPy vectorization, tensor broadcasting & memory layouts',
-        'Pydantic v2 structured schemas and runtime validation',
-        'Custom decorators, context managers & profiling tools'
+        'Python syntax fundamentals, variables, loops & control flow',
+        'Data structures: Lists, Dictionaries, Sets & Tuples',
+        'Functions, modules, error handling & Asyncio event loops',
+        'REST APIs, HTTP requests & JSON parsing',
+        'Building a functional rule-based and API-connected Mini Chatbot'
       ],
-      lab: 'Build a high-throughput async batch token processing engine with rate-limiting and automatic retries.',
-      deliverable: 'Production-ready Python benchmark pipeline repository.'
+      lab: 'Build and deploy a functional CLI & Web-based Mini Chatbot connected to OpenAI/Anthropic APIs.',
+      deliverable: 'GitHub Repository: Verified Python Foundation codebase + Mini Chatbot application.'
     },
     2: {
-      day: 'Day 06–10',
-      title: 'Neural Architectures, Transformers & LLM Internals',
-      phase: 'Phase 1',
-      overview: 'Deconstruct transformer mechanics, multi-head self-attention, rotary position embeddings (RoPE), KV cache optimization, and quantization (GGUF/AWQ).',
+      phaseNumber: 'Phase 2',
+      day: 'Days 11–15',
+      title: 'AI Fundamentals & Prompt Engineering',
+      hours: '~8 Hours Live & Labs',
+      overview: 'Deconstruct foundational AI concepts, machine learning vs deep learning, large language models (LLMs), tokens, embeddings, and master structured prompt engineering.',
       topics: [
-        'Attention mechanisms (FlashAttention-2, grouped-query attention)',
-        'Transformer decoder-only mechanics step-by-step in PyTorch',
-        'Context window extension techniques & tokenization nuances',
-        'Model quantization: 4-bit/8-bit precision trade-offs and latency'
+        'AI, ML, Deep Learning & Generative AI conceptual taxonomy',
+        'How LLMs work: Tokens, probability distributions & context windows',
+        'System prompting, few-shot prompting, chain-of-thought (CoT)',
+        'Directional stimulus prompting & ReAct reasoning techniques',
+        'Temperature, top-p, frequency penalties & hallucination mitigation'
       ],
-      lab: 'Train a mini-transformer language model from scratch on Shakespeare text and measure attention maps.',
-      deliverable: 'Jupyter notebook visualizing attention heads and KV cache benchmarks.'
+      lab: 'Develop a structured prompt engineering test suite with automated evaluation criteria.',
+      deliverable: 'Prompt engineering benchmark repository with evaluation matrices.'
     },
     3: {
-      day: 'Day 11–15',
-      title: 'Applied AI Tooling, Vector Databases & Red-Teaming Cybersecurity',
-      phase: 'Phase 1',
-      overview: 'Implement enterprise Retrieval-Augmented Generation (RAG), high-dimensional vector search with HNSW, and red-team LLMs against prompt injection & data leakage.',
+      phaseNumber: 'Phase 3',
+      day: 'Days 16–22',
+      title: 'AI Tools Mastery: Text, Image, Audio, Video & Code AI',
+      hours: '~12 Hours Live & Labs',
+      overview: 'Hands-on mastery of cutting-edge generative AI toolchains across multimodal domains: Text generation, image synthesis, audio/voice cloning, generative video, and automated coding.',
       topics: [
-        'Vector embeddings & metric spaces (Cosine, Dot, Euclidean)',
-        'Vector DB architectures: Qdrant, ChromaDB, and Milvus',
-        'Prompt injection, indirect jailbreaking, and ASCII evasion attacks',
-        'Guardrails AI, NeMo Guardrails & automated red-teaming harnesses'
+        'Text AI: Frontier LLMs, summarization, extraction & classification',
+        'Image AI: Midjourney, Stable Diffusion, Flux & ControlNet workflows',
+        'Audio AI: ElevenLabs voice cloning, Whisper speech-to-text & audio gen',
+        'Video AI: Runway Gen-3, Luma Dream Machine & Kling AI pipelines',
+        'Code AI: GitHub Copilot, Cursor AI, Claude Code & AI-assisted development'
       ],
-      lab: 'Construct a self-defending enterprise RAG pipeline that intercepts and neutralizes prompt extraction attacks.',
-      deliverable: 'Secured RAG system with automated penetration test suite.'
+      lab: 'Create an end-to-end multimodal marketing and software asset generation pipeline using 5+ AI tools.',
+      deliverable: 'Multimodal campaign portfolio with text, image, audio, video, and code assets.'
     },
     4: {
-      day: 'Day 16–22',
-      title: 'Autonomous Agent Frameworks (LangGraph, CrewAI, AutoGen)',
-      phase: 'Phase 2',
-      overview: 'Transition from linear pipelines to cyclic graph-based autonomous agents. Design stateful graphs, reflection loops, and hierarchical multi-agent teams.',
+      phaseNumber: 'Phase 4',
+      day: 'Days 23–26',
+      title: 'AI in Cybersecurity & Data Protection',
+      hours: '~7 Hours Live & Labs',
+      overview: 'Explore defensive and offensive cybersecurity in GenAI. Protect applications from prompt injections, jailbreaks, data leakage, and implement automated AI threat monitoring.',
       topics: [
-        'ReAct paradigm (Reasoning + Acting) with dynamic scratchpads',
-        'LangGraph StateGraph, conditional edges, and checkpoint persistence',
-        'CrewAI role-based task delegation & inter-agent communication',
-        'Long-term and short-term memory architecture (Episodic vs Semantic)'
+        'AI in cybersecurity operations, threat detection & incident response',
+        'Prompt injection, indirect prompt injection & jailbreak exploits',
+        'Data privacy, PII masking, data protection laws & enterprise governance',
+        'AI Guardrails (NeMo, Guardrails AI) & programmatic defense layers',
+        'Model red-teaming and automated vulnerability auditing'
       ],
-      lab: 'Build a multi-agent software engineering swarm (Product Manager -> Architect -> Developer -> QA Reviewer).',
-      deliverable: 'Autonomous software generator CLI tool.'
+      lab: 'Audit and red-team an enterprise LLM application, implementing input/output validation guardrails.',
+      deliverable: 'Cybersecurity audit report and secured AI pipeline codebase.'
     },
     5: {
-      day: 'Day 23–30',
-      title: 'Multi-Tool Execution, Dynamic Planning & Sandbox Environments',
-      phase: 'Phase 2',
-      overview: 'Equip agents with dynamic tool registries, code interpreters, SQL execution sandboxes, and web scrapers with self-correcting error recovery.',
+      phaseNumber: 'Phase 5',
+      day: 'Days 27–29',
+      title: 'AI Trends, Global Landscape & Job Opportunities',
+      hours: '~5 Hours Live & Labs',
+      overview: 'Analyze rapid industry shifts, upcoming AI architectures (test-time compute, reasoning models, SLMs), high-growth job roles, and engineer your professional GitHub & LinkedIn portfolio.',
       topics: [
-        'OpenAI / Anthropic tool calling protocols and schema definitions',
-        'Dockerized isolated code execution sandboxes',
-        'Dynamic query generation with schema introspection for PostgreSQL',
-        'Monte Carlo Tree Search (MCTS) for complex multi-step planning'
+        'Frontier AI trends: Reasoning models, edge AI, small language models (SLMs)',
+        'Global AI job market mapping: AI Agent Engineer, LLM Developer, AI Solutions Architect',
+        'GitHub portfolio engineering, README design & open-source contributions',
+        'Personal branding, LinkedIn optimization & AI tech community networking'
       ],
-      lab: 'Create a financial quantitative analysis agent that queries live market databases, writes Python analysis scripts, and plots visual charts.',
-      deliverable: 'Full-stack multi-tool financial analyst agent application.'
+      lab: 'Build and deploy a live GitHub portfolio landing page showcasing your AI projects and repositories.',
+      deliverable: 'Polished GitHub portfolio + verified LinkedIn presence ready for recruiter outreach.'
     },
     6: {
-      day: 'Day 31–37',
-      title: 'Embodied AI, Robotics Simulation & Multimodal Vision',
-      phase: 'Phase 3',
-      overview: 'Integrate vision-language-action (VLA) models, ROS2 communication nodes, robotic spatial simulation in Isaac Gym / Gazebo, and edge deployment.',
+      phaseNumber: 'Phase 6',
+      day: 'Days 30–32',
+      title: 'AI in Robotics & Embodied Intelligence Basics',
+      hours: '~5 Hours Live & Labs',
+      overview: 'Bridge artificial intelligence with physical and simulated systems. Understand robotics fundamentals, sensor perception, computer vision, and AI-driven control architectures.',
       topics: [
-        'Vision Transformers (ViT) & Multimodal LLMs for visual reasoning',
-        'ROS2 (Robot Operating System) architecture and publish/subscribe topics',
-        'Vision-Language-Action (VLA) models for robotic manipulation',
-        'Deploying optimized models to edge compute hardware (NVIDIA Jetson)'
+        'AI + Robotics fundamentals & Embodied AI paradigms',
+        'Sensory perception: LiDAR, cameras, depth sensors & computer vision',
+        'Robot kinematics, simulation environments & motion planning',
+        'Vision-Language-Action (VLA) models and robotic navigation concepts'
       ],
-      lab: 'Simulate an autonomous robotic inspection rover that navigates obstacles using multimodal visual prompts.',
-      deliverable: 'ROS2 Gazebo simulation environment with VLA control script.'
+      lab: 'Program an AI vision-guided robotic obstacle detection simulator.',
+      deliverable: 'Robotics simulation notebook and visual perception script.'
     },
     7: {
-      day: 'Day 38–45',
-      title: 'Capstone Hackathon, Enterprise Internship & Career Launch',
-      phase: 'Phase 3',
-      overview: '48-hour high-stakes cohort hackathon, enterprise mentor code reviews, 1-on-1 AI system design mock interviews, and guaranteed industry internship matching.',
+      phaseNumber: 'Phase 7',
+      day: 'Days 33–40',
+      title: 'AI Agent Development (The Core Outcome & Differentiator)',
+      hours: '~14 Hours Live & Labs',
+      overview: 'The defining core of AI DISHA. Construct the 4 flagship autonomous AI agents from scratch: Research Agent, Code Assistant Agent, Automation Agent, and Multi-Tool Agent.',
       topics: [
-        '48-Hour Agentic Capstone Hackathon with VC and industry judges',
-        'Production agent observability (Langfuse, OpenTelemetry, Tracing)',
-        'Enterprise deployment: Docker, Kubernetes & serverless GPU backends',
-        'AI Architect portfolio review, resume engineering & salary negotiation'
+        'Agentic AI fundamentals: Autonomous loops, ReAct (Reasoning + Acting)',
+        'Agent 1: Research Agent (Input: Topic → Output: Structured Report with Citations)',
+        'Agent 2: Code Assistant Agent (Debugs stack traces + Generates production code)',
+        'Agent 3: Automation Agent (Multi-step workflows across webhooks & APIs)',
+        'Agent 4: Multi-Tool Agent (Dynamic Search + Summarization + Sandbox Execution + Output)',
+        'Memory systems: Episodic, semantic, short-term and long-term storage'
       ],
-      lab: 'Deploy capstone production agent cluster with live monitoring, latency dashboards, and client demo.',
-      deliverable: 'Production deployment URL, verified portfolio badge & internship placement match.'
+      lab: 'Build, debug, and containerize all 4 flagship production AI agents.',
+      deliverable: 'Complete 4-Agent suite repository with live interactive demo endpoints.'
+    },
+    8: {
+      phaseNumber: 'Phase 8',
+      day: 'Days 41–43',
+      title: 'Demo-Ready Final Project & 48-Hour Hackathon',
+      hours: '~10 Hours Hackathon & Mentorship',
+      overview: 'Synthesize all 40 days of mastery into a comprehensive, demo-ready final product. Compete in the internal/external 24–48 hour Hackathon (teams of 3–5) with live jury evaluation.',
+      topics: [
+        'Capstone system architecture design & project scoping',
+        'Hackathon execution: Rapid prototyping, testing & pitch prep',
+        'Live prototype demos & jury evaluation (15K–20K budget pool)',
+        'Conversion goal: Transforming demo projects into 70% engagement assets'
+      ],
+      lab: 'Ship a full-stack, demo-ready AI product with live database, agent backend, and user interface.',
+      deliverable: 'Production deployment URL + verified project presentation deck.'
+    },
+    9: {
+      phaseNumber: 'Phase 9',
+      day: 'Days 44–45',
+      title: 'Career Preparation, Resume, Mock Interviews & Internship Allocation',
+      hours: '~4 Hours 1-on-1 Prep',
+      overview: 'Final stage transition into the professional ecosystem. Resume perfection, mock technical AI interviews, and direct entry into the AI DISHA Internship & Job Placement Pipeline.',
+      topics: [
+        'AI engineering resume crafting & ATS keyword optimization',
+        'Technical mock interviews: System design & live agent debugging',
+        'Internship allocation flow: Training → Project Work → Internship Allocation',
+        'Connecting with partner companies: TCS, Infosys, Amazon (aspirational) & AI startups',
+        'Official AI DISHA Certification ceremony'
+      ],
+      lab: 'Complete 1-on-1 technical AI interview simulation and submit final verified portfolio.',
+      deliverable: 'Official AI DISHA Certificate of Completion + Guaranteed Internship Pipeline match.'
     }
   };
 
@@ -119,7 +164,7 @@
       phaseCards.forEach((card) => {
         if (targetPhase === 'all' || card.getAttribute('data-phase') === targetPhase) {
           card.style.display = 'flex';
-          card.style.animation = 'fadeIn 0.4s ease';
+          card.style.animation = 'fadeIn 0.35s ease';
         } else {
           card.style.display = 'none';
         }
@@ -134,7 +179,6 @@
     if (trigger) {
       trigger.addEventListener('click', () => {
         const isOpen = item.classList.contains('open');
-        // Close others for clean accordion feel
         accordionItems.forEach((i) => i.classList.remove('open'));
         if (!isOpen) {
           item.classList.add('open');
@@ -160,7 +204,7 @@
     if (!syllabusModal) return;
 
     if (modalDayTitle) modalDayTitle.textContent = data.title;
-    if (modalDayTag) modalDayTag.textContent = `${data.phase} // ${data.day}`;
+    if (modalDayTag) modalDayTag.textContent = `${data.phaseNumber} // ${data.day} (${data.hours})`;
     if (modalDayOverview) modalDayOverview.textContent = data.overview;
     if (modalLabText) modalLabText.textContent = data.lab;
     if (modalDeliverableText) modalDeliverableText.textContent = data.deliverable;
